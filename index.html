@@ -11,160 +11,93 @@
 <header class="navbar">
   <div class="container nav-inner">
     <div class="logo">SKYLINE <span>MERIDIAN</span></div>
-    <nav>
-      <a href="#overview">Overview</a>
-      <a href="#configurations">Configurations</a>
-      <a href="#amenities">Amenities</a>
-      <a href="#gallery">Gallery</a>
-      <a href="#location">Location</a>
-      <a href="#contact" class="nav-cta">Enquire Now</a>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="residences.html">Residences</a>
+      <a href="amenities.html">Amenities &amp; Gallery</a>
+      <a href="contact.html">Location &amp; Contact</a>
+      <a href="contact.html" class="nav-cta">Enquire Now</a>
     </nav>
+    <button class="menu-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
   </div>
 </header>
 
 <section class="hero">
+  <div class="hero-slides">
+    <div class="hero-slide" style="background-image:url('https://picsum.photos/seed/skyline-hero1/1800/1100')"></div>
+    <div class="hero-slide" style="background-image:url('https://picsum.photos/seed/skyline-hero2/1800/1100')"></div>
+    <div class="hero-slide" style="background-image:url('https://picsum.photos/seed/skyline-hero3/1800/1100')"></div>
+    <div class="hero-slide" style="background-image:url('https://picsum.photos/seed/skyline-hero4/1800/1100')"></div>
+  </div>
   <div class="hero-overlay"></div>
   <div class="container hero-content">
-    <p class="eyebrow">A Landmark Address in the City</p>
-    <h1>Skyline Meridian</h1>
-    <p class="hero-sub">3, 4 &amp; 5 BHK Ultra-Luxury Residences &mdash; Starting at ₹2.4 Cr*</p>
-    <div class="hero-actions">
-      <a href="#contact" class="btn btn-primary">Get Price &amp; Floor Plans</a>
-      <a href="#gallery" class="btn btn-outline">View Gallery</a>
+    <p class="eyebrow reveal visible">A Landmark Address in the City</p>
+    <h1 class="reveal visible">Skyline Meridian</h1>
+    <p class="hero-sub reveal visible">3, 4 &amp; 5 BHK Ultra-Luxury Residences &mdash; Starting at ₹2.4 Cr*</p>
+    <div class="hero-actions reveal visible">
+      <a href="residences.html" class="btn btn-primary">Explore Residences</a>
+      <a href="amenities.html" class="btn btn-outline">View Gallery</a>
     </div>
-    <p class="rera">RERA No. XXX/XXX/XXXXXX &nbsp;|&nbsp; *Terms &amp; conditions apply</p>
+    <p class="rera reveal visible">RERA No. XXX/XXX/XXXXXX &nbsp;|&nbsp; *Terms &amp; conditions apply</p>
   </div>
+  <div class="scroll-cue"><span class="line"></span>SCROLL</div>
 </section>
 
-<section id="overview" class="section overview">
+<section class="section overview">
   <div class="container two-col">
-    <div>
+    <div class="reveal">
       <p class="eyebrow">Overview</p>
       <h2>Where Design Meets the Skyline</h2>
       <p>Skyline Meridian is a landmark residential development offering meticulously
       crafted 3, 4 &amp; 5 BHK homes set across landscaped grounds. Every residence is
       designed to maximize light, space and privacy, framed by uninterrupted city views.</p>
       <ul class="stat-row">
-        <li><strong>4.2 Acres</strong><span>Land Parcel</span></li>
-        <li><strong>3 Towers</strong><span>G+40 Floors</span></li>
-        <li><strong>60%</strong><span>Open Green Space</span></li>
-        <li><strong>500+</strong><span>Homes</span></li>
+        <li><strong data-count="4.2" data-suffix="">0</strong><span>Acres Land Parcel</span></li>
+        <li><strong data-count="3" data-suffix="">0</strong><span>Towers, G+40 Floors</span></li>
+        <li><strong data-count="60" data-suffix="%">0</strong><span>Open Green Space</span></li>
+        <li><strong data-count="500" data-suffix="+">0</strong><span>Homes</span></li>
       </ul>
     </div>
-    <div class="img-placeholder overview-img">Project Render</div>
+    <img class="photo reveal" src="https://picsum.photos/seed/skyline-overview/900/700" alt="Skyline Meridian tower render">
   </div>
 </section>
 
-<section id="configurations" class="section configurations alt-bg">
+<section class="section alt-bg">
   <div class="container">
-    <p class="eyebrow center">Configurations</p>
-    <h2 class="center">Spaces Designed Around You</h2>
-    <div class="config-grid">
-      <div class="config-card">
-        <h3>3 BHK</h3>
-        <p class="config-size">1,850 &ndash; 2,100 sq.ft.</p>
-        <p class="config-price">₹2.4 Cr onwards*</p>
-        <a href="#contact" class="btn btn-outline btn-sm">Download Floor Plan</a>
-      </div>
-      <div class="config-card featured">
-        <h3>4 BHK</h3>
-        <p class="config-size">2,650 &ndash; 3,100 sq.ft.</p>
-        <p class="config-price">₹3.6 Cr onwards*</p>
-        <a href="#contact" class="btn btn-primary btn-sm">Download Floor Plan</a>
-      </div>
-      <div class="config-card">
-        <h3>5 BHK Penthouse</h3>
-        <p class="config-size">4,200+ sq.ft.</p>
-        <p class="config-price">On Request</p>
-        <a href="#contact" class="btn btn-outline btn-sm">Download Floor Plan</a>
-      </div>
+    <p class="eyebrow center">A Glimpse Inside</p>
+    <h2 class="center">Amenities Built for Everyday Luxury</h2>
+    <div class="amenity-grid reveal-stagger">
+      <div class="amenity stagger-item"><div class="amenity-icon">🏊</div><h4>Infinity Pool</h4><span>Sundeck &amp; cabanas</span></div>
+      <div class="amenity stagger-item"><div class="amenity-icon">🏋️</div><h4>Grand Clubhouse</h4><span>Gym &amp; spa</span></div>
+      <div class="amenity stagger-item"><div class="amenity-icon">🌳</div><h4>Landscaped Gardens</h4><span>8 acres of green</span></div>
+      <div class="amenity stagger-item"><div class="amenity-icon">🛡️</div><h4>24/7 Security</h4><span>Concierge desk</span></div>
     </div>
+    <p class="center" style="margin-top:44px;"><a href="amenities.html" class="btn btn-primary">See All Amenities &amp; Gallery</a></p>
   </div>
 </section>
 
-<section id="amenities" class="section amenities">
+<section class="cta-banner reveal">
   <div class="container">
-    <p class="eyebrow center">Amenities</p>
-    <h2 class="center">A Resort, Every Single Day</h2>
-    <div class="amenity-grid">
-      <div class="amenity"><div class="amenity-icon">🏊</div><span>Infinity Pool</span></div>
-      <div class="amenity"><div class="amenity-icon">🏋️</div><span>Grand Clubhouse &amp; Gym</span></div>
-      <div class="amenity"><div class="amenity-icon">🌳</div><span>Landscaped Gardens</span></div>
-      <div class="amenity"><div class="amenity-icon">🎾</div><span>Tennis &amp; Multi-sport Courts</span></div>
-      <div class="amenity"><div class="amenity-icon">👶</div><span>Kids' Play Area</span></div>
-      <div class="amenity"><div class="amenity-icon">🎬</div><span>Private Screening Room</span></div>
-      <div class="amenity"><div class="amenity-icon">🛡️</div><span>24/7 Security &amp; Concierge</span></div>
-      <div class="amenity"><div class="amenity-icon">🚗</div><span>Covered Parking</span></div>
-    </div>
-  </div>
-</section>
-
-<section id="gallery" class="section gallery alt-bg">
-  <div class="container">
-    <p class="eyebrow center">Gallery</p>
-    <h2 class="center">Crafted to Impress</h2>
-    <div class="gallery-grid">
-      <div class="img-placeholder g1">Exterior View</div>
-      <div class="img-placeholder g2">Lobby</div>
-      <div class="img-placeholder g3">Living Room</div>
-      <div class="img-placeholder g4">Pool Deck</div>
-      <div class="img-placeholder g5">Clubhouse</div>
-      <div class="img-placeholder g6">Master Bedroom</div>
-    </div>
-  </div>
-</section>
-
-<section id="location" class="section location">
-  <div class="container two-col">
-    <div>
-      <p class="eyebrow">Location</p>
-      <h2>Connected to Everything That Matters</h2>
-      <ul class="location-list">
-        <li>5 mins to Tech Park &amp; Business District</li>
-        <li>10 mins to International Airport Expressway</li>
-        <li>Walking distance to Metro Station</li>
-        <li>Top schools &amp; hospitals within 3 km</li>
-      </ul>
-      <a href="#contact" class="btn btn-primary">Request Location Map</a>
-    </div>
-    <div class="img-placeholder location-img">Location Map</div>
-  </div>
-</section>
-
-<section id="contact" class="section contact alt-bg">
-  <div class="container two-col">
-    <div>
-      <p class="eyebrow">Enquire Now</p>
-      <h2>Book a Private Site Visit</h2>
-      <p>Share your details and our sales team will get in touch with pricing,
-      floor plans and availability.</p>
-      <p class="disclaimer">This is a demo landing page template. Replace all
-      placeholder content, images and RERA details with your actual project
-      information before publishing live.</p>
-    </div>
-    <form class="enquiry-form" onsubmit="event.preventDefault(); alert('Demo form — connect this to your CRM or a form service to go live.');">
-      <label>Full Name<input type="text" required placeholder="Your name"></label>
-      <label>Phone<input type="tel" required placeholder="+91 00000 00000"></label>
-      <label>Email<input type="email" required placeholder="you@email.com"></label>
-      <label>Interested In
-        <select>
-          <option>3 BHK</option>
-          <option>4 BHK</option>
-          <option>5 BHK Penthouse</option>
-        </select>
-      </label>
-      <button type="submit" class="btn btn-primary full-width">Submit Enquiry</button>
-    </form>
+    <h2>Your Private Site Visit Awaits</h2>
+    <p>Speak with our sales team and get real-time availability, pricing and floor plans.</p>
+    <a href="contact.html" class="btn btn-primary">Book a Visit</a>
   </div>
 </section>
 
 <footer class="footer">
   <div class="container">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="residences.html">Residences</a>
+      <a href="amenities.html">Amenities &amp; Gallery</a>
+      <a href="contact.html">Location &amp; Contact</a>
+    </nav>
     <p>&copy; 2026 Skyline Meridian. Demo site for template purposes only &mdash; not a real development.</p>
     <p class="disclaimer">RERA registration, pricing and specifications shown are placeholders. This
     page is not affiliated with, and does not reproduce content from, any third-party developer website.</p>
   </div>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
